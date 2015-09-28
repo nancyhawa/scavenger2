@@ -21,7 +21,7 @@
     <!-- <link href="css/animate.min.css" rel="stylesheet" type="text/css"> -->
 
     <!-- Background Slider -->
-    <link href="js/vegas/vegas.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="js/vegas/vegas.min.css" rel="stylesheet" type="text/css"> -->
 
     <!-- Custom CSS -->
     <!-- <link href="css/csoon.css" rel="stylesheet"> -->
@@ -35,44 +35,6 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- From old layout -->
-
-    <!-- <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <div id="home-button">
-            <%# link_to image_tag("home.png"), reset_current_clue_path, method: :post %>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <% if notice %>
-       <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-       <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-
-
-    <div class="navbar navbar-default navbar-fixed-bottom">
-      <div id="footer" class="row">
-        <div class="container col-xs-12">
-          <p class="navbar-text pull-right">
-          <% if user_signed_in? %>
-            Logged in as <strong><%= current_user.email %></strong>.
-            <%# link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-            <%# link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-          <% else %>
-            <%# link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-            <%# link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-          <% end %>
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
 <!-- Preloader -->
 <div id="preloader"><div id="status">&nbsp;</div></div>
@@ -84,34 +46,13 @@
       <div id="home-button">
         <%= link_to image_tag("star-8-32.png") + " Scavenger Hunt", reset_current_clue_path, method: :post %>
       </div>
-      <!-- <a class="navbar-brand page-scroll wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.4s" href="#page-top">
-        <span class="logo">Scavenger Hunt</span> <i class="fa fa-star"></i>
-      </a> -->
-      <!-- <div class="navbar-header">
-        <div id="home-button">
-          <%= link_to image_tag("home.png"), reset_current_clue_path, method: :post %>
-        </div>
-      </div> -->
+
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+ 
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s">
-        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-        <!-- <li class="hidden">
-          <a href="#page-top"></a>
-        </li> -->
-        <!-- <li>
-            <a class="page-scroll" href="#team">TEAM</a>
-        </li> -->
-        <% if user_signed_in? %>
-          <!-- <li>
-            <%= link_to 'Edit profile', edit_user_registration_path, :class => 'page-scroll' %>
-          </li>
-          <li>
-            <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'page-scroll'  %>
-          </li>
-          <li> -->
+       
             <div class="">
               Logged in as <strong><%= current_user.email %></strong>.<br>
               <%= link_to 'Edit profile | ', edit_user_registration_path, :class => 'page-scroll' %>
@@ -127,19 +68,6 @@
           </li>
         <% end %>
 
-      <!-- <li>
-          <a class="page-scroll" href="#page-top">HOME</a>
-      </li>
-      <li>
-          <a class="page-scroll" href="#about">WHO WE ARE</a>
-      </li>
-      <li>
-          <a class="page-scroll" href="#services">OUR SERVICES</a>
-      </li> -->
-      <!-- <li>
-          <a class="page-scroll" href="#contact">CONTACT</a>
-      </li> -->
-
             </ul>
         </div>
     </div>
@@ -151,22 +79,7 @@
     <% end %>
 </nav>
 
-<!-- Intro Header -->
-<!-- <header class="intro">
-    <div class="intro-body">
-      <%# yield %> -->
-        <!-- <%= image_tag 'logo.png', alt:"", class:"wow fadeIn", data:{wow:{duration:"4s"}}, data:{wow:{delay:".4s"}}  %> -->
-        <!-- <img src="img/logo.png" alt="" class="wow fadeIn" data-wow-duration="4s" data-wow-delay=".4s"> -->
-        <!-- <div id="clock" class="wow fadeIn" data-wow-duration="6s" data-wow-delay=".6s"></div> -->
-        <!-- <p class="intro-text wow fadeIn" data-wow-duration="7s" data-wow-delay=".7s">WE ARE COMING SOON. STAY TUNED!</p> -->
-        <!-- <ul class="list-inline lead"> -->
-            <!-- <li><a href="#about" class="btn btn-border btn-lg page-scroll wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s"><i class="fa fa-chevron-down"></i> WHO WE ARE</a></li> -->
-            <!-- <li><a href="#contact" class="btn btn-white btn-lg page-scroll wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.4s"><i class="fa fa-chevron-down"></i> CONTACT US</a></li> -->
-        <!-- </ul> -->
-    <!-- </div>
-</header> -->
 
-<!-- Action2 Section -->
 <section class="action2 container-fluid text-center wow fadeIn">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
@@ -191,28 +104,20 @@
             <h3>(123) 456-7890</h3>
         </div> -->
         <div class="span12">
-          by Students of Flatiron School<br>
+          Created by Students of The Flatiron School<br>
           <i class="fa fa-map-marker"></i> 11 Broadway New York, NY 10004<br>
           Copyright &copy; Scavenger Hunt NYC 2015
         </div>
-        <!-- <div class="col-md-3">
-            <ul class="list-inline lead">
-                <li><a href="/"><i class="fa fa-twitter fa-fw fa-lg"></i></a></li>
-                <li><a href="/"><i class="fa fa-facebook fa-fw fa-lg"></i></a></li>
-                <li><a href="/"><i class="fa fa-instagram fa-fw fa-lg"></i></a></li>
-                <li><a href="/"><i class="fa fa-envelope fa-fw fa-lg"></i></a></li>
-            </ul>
-        </div> -->
     </div>
 </section>
 
 <%= javascript_include_tag 'application' %>
 
 <!-- jQuery -->
-<!-- <script src="js/jquery.js"></script> -->
+<script src="js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
 
 <!-- Plugin JavaScript -->
 <!-- <script src="js/jquery.easing.min.js"></script>
